@@ -8,9 +8,7 @@
     'application': True,
     'data': [
         'views/course_menu.xml',
-        'views/module_view.xml',
-        'views/program_view.xml',
-        'views/student_view.xml'
+        'views/module_view.xml'
     ],
 
 }

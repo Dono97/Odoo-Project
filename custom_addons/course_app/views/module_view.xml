@@ -5,19 +5,11 @@
        <field name="model">module.program</field>
        <field name="arch" type="xml">
          <form string="Module">
-           <header>
-<!-- Buttons will go here -->
-            <button name="generate_module_code" type="object"
-              string="Generate module code" />
-           </header>
-           <sheet>
-<!-- Content goes here: -->
-            <group>
-              <field name="name" />
-              <field name="year" />
-              <field name="code" />
-            </group>
-           </sheet>
+           <group>
+             <field name="name" />
+             <field name="year" />
+             <field name="code" />
+           </group>
          </form>
        </field>
      </record>

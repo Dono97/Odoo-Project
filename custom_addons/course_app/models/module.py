@@ -12,8 +12,3 @@ class Module(models.Model):
     program_module_id = fields.Many2one('program.course', string='Program')
     #result_module_id = fields.One2many('result.module', string='Result')
     lecturer_module_id = fields.Many2one('lecturer.user', string='Lecturer')
-
-#button to generate module code
-    #@api.multi
-    #def generate_module_code(self):
-        #for module in self:

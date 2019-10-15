@@ -15,8 +15,3 @@ class Student(models.Model) :
     #@api.multi
     #def _compute_stu_num(self):
         #pass
-
-#button to generate student Number
-    #@api.multi
-    #def (self):
-        #for student in self:
