@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<odoo>
+  <menuitem id="create_module" name="Create module"/>
+  <menuitem id="create_program" name="Create program"/>
+  <menuitem id="create_student" name="Create student"/>
+</odoo>

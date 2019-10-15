@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_./academic_staff_./academic_staff,./academic_staff../academic_staff,model_./academic_staff_./academic_staff,,1,0,0,0
