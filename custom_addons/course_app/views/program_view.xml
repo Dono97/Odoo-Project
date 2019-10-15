@@ -1,20 +1,19 @@
 <?xml version="1.0"?>
    <odoo>
-     <record id="view_form_module" model="ir.ui.view">
-       <field name="name">Module View</field>
-       <field name="model">module.program</field>
+     <record id="view_form_program" model="ir.ui.view">
+       <field name="name">Program View</field>
+       <field name="model">program.course</field>
        <field name="arch" type="xml">
          <form string="Module">
            <header>
 <!-- Buttons will go here -->
-            <button name="generate_module_code" type="object"
-              string="Generate module code" />
+            <button name="generate_program_code" type="object"
+              string="Generate program code" />
            </header>
            <sheet>
 <!-- Content goes here: -->
             <group>
               <field name="name" />
-              <field name="year" />
               <field name="code" />
             </group>
            </sheet>

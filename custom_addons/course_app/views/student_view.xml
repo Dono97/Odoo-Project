@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<odoo>
+  <record id="view_form_student" model="ir.ui.view">
+    <field name="name">Student View</field>
+    <field name="model">student.user</field>
+    <field name="arch" type="xml">
+      <form string="Module">
+        <header>
+<!-- Buttons will go here -->
+         <button name="generate_student_number" type="object"
+           string="Generate student number" />
+        </header>
+        <sheet>
+<!-- Content goes here: -->
+         <group>
+           <field name="student_number" />
+           <field name="first_name" />
+           <field name="last_name" />
+         </group>
+        </sheet>
+      </form>
+    </field>
+  </record>
+</odoo>
