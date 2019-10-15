@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+   <odoo>
+     <record id="view_form_program" model="ir.ui.view">
+       <field name="name">Program View</field>
+       <field name="model">program.course</field>
+       <field name="arch" type="xml">
+         <form string="Program">
+           <group>
+             <field name="name" />
+             <field name="code" />
+             <field name="module_program_id" widget="One2many_tags"/>
+           </group>
+         </form>
+       </field>
+     </record>
+</odoo>

@@ -8,5 +8,5 @@ class Program(models.Model):
     code = fields.Char('Program code', required=True)
 
     #Relationships
-    student_program_id = fields.Many2many('student.user', string='Student')
+    student_program_id = fields.One2many('student.user', 'program_student_id', string='Student')
     module_program_id = fields.One2many('module.program','program_module_id', string='Module')

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+   <odoo>
+     <record id="view_form_student" model="ir.ui.view">
+       <field name="name">Student View</field>
+       <field name="model">student.user</field>
+       <field name="arch" type="xml">
+         <form string="Student">
+           <group>
+             <field name="first_name" />
+             <field name="last_name" />
+             <field name="program_student_id" widget="Many2many_tags"/>
+           </group>
+         </form>
+       </field>
+     </record>
+</odoo>

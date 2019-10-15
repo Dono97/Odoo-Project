@@ -7,3 +7,4 @@ from . import program
 from . import module
 from . import result
 from . import lecturer
+from . import transcript

@@ -9,7 +9,7 @@ class Student(models.Model) :
     last_name = fields.Char('Last Name', required=True)
 
     #Relationships
-    program_student_id = fields.Many2many('program.course', string='Program')
+    program_student_id = fields.Many2one('program.course', string='Program')
     result_student_id = fields.One2many('result.module', 'student_result_id', string='Result')
 
     #@api.multi
