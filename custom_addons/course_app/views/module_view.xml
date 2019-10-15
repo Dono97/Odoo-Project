@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+   <odoo>
+     <record id="view_form_module" model="ir.ui.view">
+       <field name="name">Module View</field>
+       <field name="model">module.program</field>
+       <field name="arch" type="xml">
+         <form string="Module">
+           <group>
+             <field name="name" />
+             <field name="year" />
+             <field name="code" />
+           </group>
+         </form>
+       </field>
+     </record>
+</odoo>

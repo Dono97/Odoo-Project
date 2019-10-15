@@ -8,6 +8,7 @@
     'application': True,
     'data': [
         'views/course_menu.xml',
+        'views/module_view.xml'
     ],
 
 }

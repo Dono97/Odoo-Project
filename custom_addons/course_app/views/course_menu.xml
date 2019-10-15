@@ -1,6 +1,44 @@
 <?xml version="1.0"?>
 <odoo>
-  <menuitem id="create_module" name="Create module"/>
-  <menuitem id="create_program" name="Create program"/>
-  <menuitem id="create_student" name="Create student"/>
+  <menuitem id="course_management" name="Course management"/>
+
+  <!-- Action to open Module Creation -->
+  <act_window id="action_create_module"
+       name="Create Module"
+       res_model="module.program"
+       view_mode="tree,form"
+/>
+     <!-- Menu item to open Create a Module -->
+  <menuitem id="menu_module"
+       name="Create a Module"
+       parent="course_management"
+       action="action_create_module"
+/>
+
+<!-- Action to open Program Creation -->
+<act_window id="action_create_program"
+     name="Create Program"
+     res_model="program.course"
+     view_mode="tree,form"
+/>
+   <!-- Menu item to open Program Creation -->
+<menuitem id="menu_program"
+     name="Create a Program"
+     parent="course_management"
+     action="action_create_program"
+/>
+
+<!-- Action to open Student Creation -->
+<act_window id="action_load_student"
+     name="Load Student"
+     res_model="student.user"
+     view_mode="tree,form"
+/>
+   <!-- Menu item to open Student Creation -->
+<menuitem id="menu_student"
+     name="Load a student"
+     parent="course_management"
+     action="action_load_student"
+/>
+
 </odoo>
