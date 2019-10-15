@@ -10,4 +10,3 @@ class Lecturer(models.Model):
 
 #Relationships
     module_lecturer_id = fields.One2many('module.program', 'lecturer_module_id', string='Module')
-#hello world
