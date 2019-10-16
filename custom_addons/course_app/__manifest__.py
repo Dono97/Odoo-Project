@@ -8,6 +8,8 @@
     'application': True,
     'data': [
         'security/course_security.xml',
+        'security/results_security.xml',
+        'security/ir.model.access.csv',
         'views/course_menu.xml',
         'views/module_view.xml',
         'views/program_view.xml',

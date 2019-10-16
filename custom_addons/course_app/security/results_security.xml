@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+   <odoo>
+     <record id="module_results_app_category" model="ir.module.category">
+       <field name="name">Results Management</field>
+     </record>
+
+     <!-- Course Management Student Group -->
+     <record id="results_student_user" model="res.groups">
+       <field name="name">Student</field>
+       <field name="category_id"
+              ref="module_results_app_category"/>
+       <field name="implied_ids"
+              eval="[(4, ref('base.group_user'))]"/>
+     </record>
+
+     <!-- Course Management Lecturer Group -->
+     <record id="results_lecturer_user" model="res.groups">
+      <field name="name">Lecturer</field>
+      <field name="category_id"
+             ref="module_results_app_category"/>
+      <field name="implied_ids"
+             eval="[(4, ref('results_student_user'))]"/>
+      <field name="users"
+             eval="[(4, ref('base.user_root')),
+                    (4, ref('base.user_admin'))]"/>
+     </record>
+
+     <!-- Course Management Admin Group -->
+     <record id="results_admin_user" model="res.groups">
+      <field name="name">Admin</field>
+      <field name="category_id"
+             ref="module_results_app_category"/>
+      <field name="implied_ids"
+             eval="[(4, ref('results_student_user'))]"/>
+      <field name="users"
+             eval="[(4, ref('base.user_root')),
+                    (4, ref('base.user_admin'))]"/>
+     </record>
+
+   </odoo>
