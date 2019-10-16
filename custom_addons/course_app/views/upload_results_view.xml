@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+   <odoo>
+     <record id="view_form_upload_results" model="ir.ui.view">
+       <field name="name">Upload Results View</field>
+       <field name="model">result.module</field>
+       <field name="arch" type="xml">
+         <form string="Upload results">
+           <header>
+           </header>
+           <sheet>
+             <button name="load_per_student" type="object"
+               string="Load results per student" />
+             <button name="load_per_module" type="object"
+                 string="Load results per module" />
+           <!-- <group>
+             <field name="value" />
+             <field name="student_result_id" widget="Many2one_tags"/>
+           </group> -->
+           </sheet>
+         </form>
+       </field>
+     </record>
+</odoo>

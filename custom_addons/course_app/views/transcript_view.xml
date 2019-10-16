@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+   <odoo>
+     <record id="view_form_transcript" model="ir.ui.view">
+       <field name="name">Transcript View</field>
+       <field name="model">transcript.student</field>
+       <field name="arch" type="xml">
+         <form string="Transcript">
+           <group>
+             <field name="result_transcript_id" widget="One2many_tags"/>
+             <field name="module_transcript_id" widget="One2many_tags"/>
+           </group>
+         </form>
+       </field>
+     </record>
+</odoo>
