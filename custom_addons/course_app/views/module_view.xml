@@ -8,7 +8,9 @@
            <group>
              <field name="name" />
              <field name="year" />
-             <field name="code" />
+             <!-- <field name="code" /> -->
+             <button name="_compute_module_code" type="object"
+               string="Create module code" />
            </group>
          </form>
        </field>
