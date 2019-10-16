@@ -7,6 +7,7 @@
     'depends': ['base'],
     'application': True,
     'data': [
+        'security/course_security.xml',
         'views/course_menu.xml',
         'views/module_view.xml',
         'views/program_view.xml',
