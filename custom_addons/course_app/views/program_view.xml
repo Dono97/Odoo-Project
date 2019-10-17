@@ -8,7 +8,7 @@
            <group>
              <field name="name" />
              <field name="code" />
-             <field name="module_program_id" widget="One2many_tags"/>
+             <field name="module_program_id" widget="many2many_checkboxes"/>
            </group>
          </form>
        </field>

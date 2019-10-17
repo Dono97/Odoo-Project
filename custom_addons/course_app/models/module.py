@@ -19,7 +19,6 @@ class Module(models.Model):
     def compute_module_code(self):
         self.ensure_one()
         self.code = self.name[:3] + self.year + "0"
-        while self.code.upper() in self:
+        while self.code in self:
             self.code = self.name[:3] + self.year + str(int(self.code[-1])+1)
-            return self.code
-            
+        return self.code.upper()

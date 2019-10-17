@@ -5,14 +5,18 @@
        <field name="model">module.program</field>
        <field name="arch" type="xml">
          <form string="Module">
-           <group>
-             <field name="name" />
-             <field name="year" />
-             <!-- <field name="code" /> -->
+           <header>
              <button name="compute_module_code" type="object"
                string="Create module code" />
-               
-           </group>
+           </header>
+           <sheet>
+             <group>
+               <field name="name" />
+               <field name="year" />
+               <field name="code" />
+               <!-- <field name="code" /> -->
+             </group>
+           </sheet>
          </form>
        </field>
      </record>

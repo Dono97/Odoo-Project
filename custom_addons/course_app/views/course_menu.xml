@@ -10,7 +10,7 @@
 />
      <!-- Menu item to open Create a Module -->
   <menuitem id="menu_module"
-       name="Create a Module"
+       name="Module Management"
        parent="course_management"
        action="action_create_module"
 />
@@ -23,7 +23,7 @@
 />
    <!-- Menu item to open Program Creation -->
 <menuitem id="menu_program"
-     name="Create a Program"
+     name="Program Management"
      parent="course_management"
      action="action_create_program"
 />
@@ -36,7 +36,7 @@
 />
    <!-- Menu item to open Student Creation -->
 <menuitem id="menu_student"
-     name="Load a student"
+     name="Student Management"
      parent="course_management"
      action="action_load_student"
 />
