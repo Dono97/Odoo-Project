@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-  <menuitem id="course_management" name="Course management"/>
+  <menuitem id="course_management" name="Course Management"/>
 
   <!-- Action to open Module Creation -->
   <act_window id="action_create_module"

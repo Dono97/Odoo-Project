@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <odoo>
-  <menuitem id="results_management" name="Results management"/>
+  <menuitem id="results_management" name="Results Management"/>
 
   <!-- Action to open Module Creation -->
   <act_window id="action_upload_results"
