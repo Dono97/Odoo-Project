@@ -11,7 +11,7 @@
              <group>
                <field name="name" />
                <field name="year" />
-               <!--<field name="code" />-->
+               <field name="code" />
 
              </group>
              <div class="oe_right compute_module_code">
