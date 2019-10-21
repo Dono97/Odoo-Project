@@ -6,18 +6,32 @@
        <field name="arch" type="xml">
          <form string="Module">
            <header>
-             <button name="compute_module_code" type="object"
-               string="Create module code" />
            </header>
            <sheet>
              <group>
                <field name="name" />
                <field name="year" />
-               <field name="code" />
-               <!-- <field name="code" /> -->
+               <!--<field name="code" />-->
+
              </group>
+             <div class="oe_right compute_module_code">
+               <button name="compute_module_code" type="object" string="Generate Module Code" />
+             </div>
+
            </sheet>
          </form>
+       </field>
+     </record>
+
+     <record id="view_tree_module" model="ir.ui.view">
+       <field name="name">Module Tree</field>
+       <field name="model">module.program</field>
+       <field name="arch" type="xml">
+         <tree>
+               <field name="name" />
+               <field name="year" />
+               <field name="code" />
+         </tree>
        </field>
      </record>
 </odoo>

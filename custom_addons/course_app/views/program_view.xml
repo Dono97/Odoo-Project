@@ -13,4 +13,18 @@
          </form>
        </field>
      </record>
+
+
+     <record id="view_tree_program" model="ir.ui.view">
+       <field name="name">Module Tree</field>
+       <field name="model">program.course</field>
+       <field name="arch" type="xml">
+         <tree>
+               <field name="name" />
+               <field name="code" />
+         </tree>
+       </field>
+     </record>
+
+
 </odoo>

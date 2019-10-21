@@ -9,8 +9,26 @@
              <field name="first_name" />
              <field name="last_name" />
              <field name="program_student_id" widget="Selection"/>
+             <!--<field name="student_number" />-->
            </group>
+           <!-- <div class="oe_right _compute_stu_num">
+            <button name="compute_stu_num" type="object" string="Generate Student Number"/>
+          </div> -->
          </form>
        </field>
      </record>
+
+     <record id="view_tree_student" model="ir.ui.view">
+       <field name="name">Module Tree</field>
+       <field name="model">student.user</field>
+       <field name="arch" type="xml">
+         <tree>
+               <field name="first_name" />
+               <field name="last_name" />
+               <!-- <field name="student_number" /> -->
+         </tree>
+       </field>
+     </record>
+
+
 </odoo>
