@@ -6,6 +6,9 @@
        <field name="arch" type="xml">
          <form string="Transcript">
            <group>
+             <field name='student_transcript_id'/>
+           </group>
+           <group>
              <field name="result_transcript_id" widget="One2many_tags"/>
              <field name="module_transcript_id" widget="One2many_tags"/>
            </group>
