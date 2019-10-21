@@ -5,19 +5,25 @@
        <field name="model">result.module</field>
        <field name="arch" type="xml">
          <form string="Upload results">
-           <header>
-           </header>
-           <sheet>
-             <button name="load_per_student" type="object"
-               string="Load results per student" />
-             <button name="load_per_module" type="object"
-                 string="Load results per module" />
-           <!-- <group>
-             <field name="value" />
-             <field name="student_result_id" widget="Many2one_tags"/>
-           </group> -->
-           </sheet>
-         </form>
+           <group>
+             <field name="student_result_id" widget="Selection"/>
+             <field name="module_result_id" widget="Selection"/>
+             <field name="value"/>
+           </group>
+        </form>
        </field>
      </record>
+
+     <record id="view_tree_upload_results" model="ir.ui.view">
+       <field name="name">Result Tree</field>
+       <field name="model">result.module</field>
+       <field name="arch" type="xml">
+         <tree>
+               <field name="student_result_id" />
+               <field name="module_result_id" />
+               <field name="value"/>
+         </tree>
+       </field>
+     </record>
+
 </odoo>

@@ -6,7 +6,7 @@
   <act_window id="action_upload_results"
        name="Upload Results"
        res_model="result.module"
-       view_mode="form"
+       view_mode="tree,form"
 />
      <!-- Menu item to open Create a Module -->
   <menuitem id="menu_upload_results"
