@@ -3,7 +3,7 @@ from odoo import fields, models
 class Result(models.Model):
     _name = 'result.module'
     _description = 'Result'
-    value = fields.Integer('Result Value', required=True)
+    value = fields.Float('Result Value', required=True)
 
     #Relationships
     module_result_id = fields.Many2one('module.program', string='Module')

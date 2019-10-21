@@ -24,6 +24,7 @@ class Student(models.Model) :
 
             student_number = rec.student_number
 
+
     @api.one
     @api.depends('transcript_student_ids')
     def compute_transcript(self):

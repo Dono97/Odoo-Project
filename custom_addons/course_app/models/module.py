@@ -28,6 +28,10 @@ class Module(models.Model):
     @api.depends('name')
     def compute_module_code(self):
        for rec in self:
-          rec.code = rec.name[:3]+ str(rec.id)
 
-          code = rec.code
+          nametest = str(rec.name)
+          namevar = nametest[:3]
+          codevar = str(rec.id)
+          code = namevar.upper() + codevar
+
+          rec.code = code
