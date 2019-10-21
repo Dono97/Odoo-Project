@@ -17,4 +17,6 @@ class Student(models.Model) :
     @api.multi
     def compute_stu_num(self):
         for rec in self:
-            rec.student_number = rec.id
+            rec.student_number = '100' + str(rec.id)
+
+            student_number = rec.student_number
