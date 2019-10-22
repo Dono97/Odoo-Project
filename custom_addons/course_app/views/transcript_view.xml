@@ -9,8 +9,8 @@
              <field name='student_transcript_id'/>
            </group>
            <group>
-             <field name="result_transcript_id" widget="One2many_tags"/>
-             <field name="module_transcript_id" widget="One2many_tags"/>
+             <!-- <field name="result_transcript_id" widget="One2many_tags"/>
+             <field name="module_transcript_id" widget="One2many_tags"/> -->
            </group>
          </form>
        </field>
@@ -20,14 +20,11 @@
          <field name="name">Search a Student</field>
          <field name="model">transcript.student</field>
          <field name="arch" type="xml">
-         <search>
-           <field name="result_transcript_id"/>
-           <filter name="filter_inactive"
-                   string="Inactive"
-                   domain="[('active','=',True)]"/>
-           <filter name="filter_active"
-                   string="Active"
-                   domain="[('active','=',False)]"/>
+         <search string="Search patients">
+           <!-- <field name="result_transcript_id"/> -->
+           <!-- <filter name="module_filter"
+                   string="Module"
+                   domain="[('group_by','=',module_transcript_id)]"/> -->
          </search>
          </field>
        </record>

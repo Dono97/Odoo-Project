@@ -13,7 +13,7 @@ class Module(models.Model):
     program_module_id = fields.Many2one('program.course', string='Program')
     result_module_id = fields.One2many('result.module','module_result_id', string='Result')
     lecturer_module_id = fields.Many2one('lecturer.user', string='Lecturer')
-    transcript_module_id = fields.Many2one('transcript.student',string='Transcript')
+    #transcript_module_id = fields.Many2one('transcript.student',string='Transcript')
 
 
     #@api.multi

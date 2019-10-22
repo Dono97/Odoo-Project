@@ -8,4 +8,4 @@ class Result(models.Model):
     #Relationships
     module_result_id = fields.Many2one('module.program', string='Module')
     student_result_id = fields.Many2one('student.user', string='Student')
-    transcript_result_id = fields.Many2one('transcript.student', string='Transcript')
+    #transcript_result_id = fields.Many2one('transcript.student', string='Transcript')

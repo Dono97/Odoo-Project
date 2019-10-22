@@ -19,7 +19,8 @@
 <act_window id="action_view_transcripts"
      name="View Transcripts"
      res_model="transcript.student"
-     view_mode="form"
+     view_mode="form,search"
+
 />
    <!-- Menu item to open Program Creation -->
 <menuitem id="menu_view_transcripts"
