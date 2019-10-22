@@ -9,6 +9,7 @@ class Student(models.Model) :
     student_number = fields.Char('Student Number', compute='compute_stu_num', store=True)
     first_name = fields.Char('First Name', required=True)
     last_name = fields.Char('Last Name', required=True)
+    image = fields.Binary('Cover')
     name = fields.Char('Name', compute='computer_name')
 
     #Relationships

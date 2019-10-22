@@ -19,7 +19,7 @@
 <act_window id="action_view_transcripts"
      name="View Transcripts"
      res_model="transcript.student"
-     view_mode="form,search"
+     view_mode="form"
 
 />
    <!-- Menu item to open Program Creation -->

@@ -15,19 +15,4 @@
          </form>
        </field>
      </record>
-
-     <record id="view_search_student" model="ir.ui.view">
-         <field name="name">Search a Student</field>
-         <field name="model">transcript.student</field>
-         <field name="arch" type="xml">
-         <search string="Search patients">
-           <!-- <field name="result_transcript_id"/> -->
-           <!-- <filter name="module_filter"
-                   string="Module"
-                   domain="[('group_by','=',module_transcript_id)]"/> -->
-         </search>
-         </field>
-       </record>
-
-
 </odoo>
