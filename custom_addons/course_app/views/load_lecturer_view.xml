@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
    <odoo>
+     <!-- Form view for creating a new lecturer -->
      <record id="view_form_lecturer" model="ir.ui.view">
        <field name="name">Lecturer View</field>
        <field name="model">lecturer.user</field>
@@ -12,10 +13,14 @@
              <field name="staff_number"/>
              <field name="module_lecturer_id" widget="many2many_checkboxes"/>
            </group>
+
+           <!-- Button to generate a staff number -->
            <div class="oe_top_right _compute_staff_num">
             <button name="compute_staff_num" type="object" string="Generate Staff Number"/>
             <field name="image" widget="image"/>
           </div>
+
+          <!-- Button to save a new lecturer in the system -->
           <div class="oe_top_right _add_lecturer">
            <button name="add_lecturer" type="object" string="Add Lecturer"/>
          </div>
@@ -23,7 +28,7 @@
        </field>
      </record>
 
-
+     <!-- Tree view to display the list of existing lecturers -->
      <record id="view_tree_lecturer" model="ir.ui.view">
        <field name="name">Lecturer Tree</field>
        <field name="model">lecturer.user</field>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
    <odoo>
+     <!-- Form view for creating a new module -->
      <record id="view_form_module" model="ir.ui.view">
        <field name="name">Module View</field>
        <field name="model">module.program</field>
@@ -22,7 +23,7 @@
          </form>
        </field>
      </record>
-
+     <!-- Tree view to display the list of existing modules -->
      <record id="view_tree_module" model="ir.ui.view">
        <field name="name">Module Tree</field>
        <field name="model">module.program</field>

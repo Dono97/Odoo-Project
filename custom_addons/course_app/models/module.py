@@ -24,7 +24,7 @@ class Module(models.Model):
     #        self.code = self.name[:3] + self.year + str(int(self.code[-1])+1)
     #    return self.code.upper()
 
-
+    #Function to generate unique module code
     @api.depends('name')
     def compute_module_code(self):
        for rec in self:

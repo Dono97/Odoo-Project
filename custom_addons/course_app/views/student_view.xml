@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
    <odoo>
+     <!-- Form view for creating a new student -->
      <record id="view_form_student" model="ir.ui.view">
        <field name="name">Student View</field>
        <field name="model">student.user</field>
@@ -22,6 +23,7 @@
        </field>
      </record>
 
+     <!-- Tree view to display the list of existing students -->
      <record id="view_tree_student" model="ir.ui.view">
        <field name="name">Module Tree</field>
        <field name="model">student.user</field>

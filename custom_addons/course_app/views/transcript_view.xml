@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
    <odoo>
+     <!-- Form view for viewing transcripts -->
      <record id="view_form_transcript" model="ir.ui.view">
        <field name="name">Transcript View</field>
        <field name="model">transcript.student</field>
@@ -10,8 +11,14 @@
            </group>
            <group>
              <!-- <field name="result_transcript_id" widget="One2many_tags"/>
-             <field name="module_transcript_id" widget="One2many_tags"/> -->   
+             <field name="module_transcript_id" widget="One2many_tags"/> -->
            </group>
+
+           <!-- Button that pulls a students list of modules and associated results -->
+           <div class="oe_button_box" name="button box"/>
+             <button name="open_student_transcript" string="View transcript"
+               type="object" class="oe_start_button"/>
+
          </form>
        </field>
      </record>

@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
    <odoo>
+     <!-- Form view for uploading results -->
      <record id="view_form_upload_results" model="ir.ui.view">
        <field name="name">Upload Results View</field>
        <field name="model">result.module</field>
@@ -14,6 +15,7 @@
        </field>
      </record>
 
+     <!-- Tree view to display the list of uploaded results -->
      <record id="view_tree_upload_results" model="ir.ui.view">
        <field name="name">Result Tree</field>
        <field name="model">result.module</field>
