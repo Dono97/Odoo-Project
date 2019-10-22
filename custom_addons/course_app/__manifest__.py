@@ -16,7 +16,8 @@
         'views/program_view.xml',
         'views/student_view.xml',
         'views/transcript_view.xml',
-        'views/upload_results_view.xml'
+        'views/upload_results_view.xml',
+        'views/load_lecturer_view.xml'
     ],
 
 }

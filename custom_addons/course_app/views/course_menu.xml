@@ -41,4 +41,16 @@
      action="action_load_student"
 />
 
+<!-- Action to open Student Creation -->
+<act_window id="action_load_lecturer"
+     name="Load Lecturer"
+     res_model="lecturer.user"
+     view_mode="tree,form"
+/>
+   <!-- Menu item to open Student Creation -->
+<menuitem id="menu_lecturer"
+     name="Lecturer Management"
+     parent="course_management"
+     action="action_load_lecturer"
+/>
 </odoo>

@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+   <odoo>
+     <record id="view_form_lecturer" model="ir.ui.view">
+       <field name="name">Lecturer View</field>
+       <field name="model">lecturer.user</field>
+       <field name="arch" type="xml">
+         <form string="Lecturer">
+           <group>
+             <field name="first_name" />
+             <field name="last_name" />
+             <field name="office_number"/>
+             <field name="staff_number"/>
+             <field name="module_lecturer_id" widget="many2many_checkboxes"/>
+           </group>
+           <div class="oe_top_right _compute_staff_num">
+            <button name="compute_staff_num" type="object" string="Generate Staff Number"/>
+            <field name="image" widget="image"/>
+          </div>
+          <div class="oe_top_right _add_lecturer">
+           <button name="add_lecturer" type="object" string="Add Lecturer"/>
+         </div>
+         </form>
+       </field>
+     </record>
+
+
+     <record id="view_tree_lecturer" model="ir.ui.view">
+       <field name="name">Lecturer Tree</field>
+       <field name="model">lecturer.user</field>
+       <field name="arch" type="xml">
+         <tree>
+               <field name="first_name" />
+               <field name="last_name" />
+               <field name="staff_number" />
+               <field name="office_number" />
+         </tree>
+       </field>
+     </record>
+
+
+</odoo>
