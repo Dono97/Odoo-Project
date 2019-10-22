@@ -3,9 +3,9 @@ access_c_module_admin_user,AdminUser,model_module_program,course_admin_user,1,1,
 access_c_program_admin_user,AdminUser,model_program_course,course_admin_user,1,1,1,1
 access_c_student_admin_user,AdminUser,model_student_user,course_admin_user,1,1,1,1
 
-access_c_module_lecturer_user,LecturerUser,model_module_program,course_admin_user,0,0,0,0
-access_c_program_lecturer_user,LecturerUser,model_program_course,course_admin_user,0,0,0,0
-access_c_student_lecturer_user,LecturerUser,model_student_user,course_admin_user,0,0,0,0
+access_c_module_lecturer_user,LecturerUser,model_module_program,course_admin_user,1,0,0,0
+access_c_program_lecturer_user,LecturerUser,model_program_course,course_admin_user,1,0,0,0
+access_c_student_lecturer_user,LecturerUser,model_student_user,course_admin_user,1,0,0,0
 
 access_c_module_student_user,StudentUser,model_module_program,course_student_user,0,0,0,0
 access_c_program_student_user,StudentUser,model_program_course,course_student_user,0,0,0,0

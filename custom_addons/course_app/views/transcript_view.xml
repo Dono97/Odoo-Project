@@ -10,7 +10,7 @@
            </group>
            <group>
              <!-- <field name="result_transcript_id" widget="One2many_tags"/>
-             <field name="module_transcript_id" widget="One2many_tags"/> -->
+             <field name="module_transcript_id" widget="One2many_tags"/> -->   
            </group>
          </form>
        </field>

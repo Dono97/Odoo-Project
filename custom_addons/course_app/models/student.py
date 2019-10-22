@@ -55,6 +55,7 @@ class Student(models.Model) :
                 student_number = set_5 + str(self.five_digits(5))
 
             rec.student_number = student_number
+            return rec.student_number
 
     @api.one
     @api.depends('transcript_student_ids')
@@ -70,3 +71,13 @@ class Student(models.Model) :
             asset.student_transcript_id = False
         # set new reference
         self.transcript_student_id.student_transcript_id = self
+
+    @api.multi
+    def add_student(self):
+        new_user = self.env['res.users'].create({
+            'name':self.first_name,
+            'login':self.first_name,
+            'new_password':self.student_number,
+        })
+        student_group_security = self.env['res.groups'].search([('name', '=', 'Student')])
+        new_user.groups_id = student_group_security

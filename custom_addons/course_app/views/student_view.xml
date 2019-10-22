@@ -15,6 +15,9 @@
             <button name="compute_stu_num" type="object" string="Generate Student Number"/>
             <field name="image" widget="image"/>
           </div>
+          <div class="oe_top_right _add_student">
+           <button name="add_student" type="object" string="Add Student"/>
+         </div>
          </form>
        </field>
      </record>
